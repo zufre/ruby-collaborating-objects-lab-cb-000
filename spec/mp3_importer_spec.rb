@@ -39,7 +39,7 @@ describe "MP3Importer" do
 
 
       expect(Artist.all.size).to eq(3)
-      
+      expect(Artist.all.first.songs.empty? && Artist.all.last.songs.empty?).to eq(false)
     end
   end
 end
